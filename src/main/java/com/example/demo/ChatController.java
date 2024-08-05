@@ -109,6 +109,7 @@ public class ChatController {
 		String message = request.getParameter("contents");
 		String nickname = (String) session.getAttribute("nickname");
 		System.out.println("수정 메세지 : " + message);
+		System.out.println("aa");
 		ChatData chatData = ChatData.builder()
 				.id(id)
 				.nickname(nickname)
